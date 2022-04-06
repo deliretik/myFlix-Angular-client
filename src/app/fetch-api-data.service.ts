@@ -31,10 +31,7 @@ export class UserRegistrationService {
       headers: new HttpHeaders({
         Authorization: 'Bearer ' + token
       })
-    }).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+    })
   }
 
 // Get One Movie
@@ -43,10 +40,8 @@ export class UserRegistrationService {
     return this.http.get(apiUrl + `/movies/${Title}`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer' + token,
-      })}).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+      })
+    })
   }
 
 // Get Director
@@ -55,10 +50,8 @@ export class UserRegistrationService {
     return this.http.get(apiUrl + `/directors/${Name}`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer' + token,
-      })}).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+      })
+    })
   }
 
 // Get Genre
@@ -67,10 +60,8 @@ export class UserRegistrationService {
     return this.http.get(apiUrl + `/genres/${Name}`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer' + token,
-      })}).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+      })
+    })
   }
 
 // Get User
@@ -79,10 +70,8 @@ export class UserRegistrationService {
     return this.http.get(apiUrl + `/users/${Username}`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer' + token,
-      })}).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+      })
+    })
   }
 
 // Get Favorite Movie
@@ -93,10 +82,8 @@ export class UserRegistrationService {
     return this.http.get(apiUrl + `/users/:Username/movies/${MovieID}`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer' + token,
-      })}).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+      })
+    })
   }
 
 // Add movie to favMovies
@@ -106,10 +93,8 @@ export class UserRegistrationService {
     return this.http.post(apiUrl + `/users/${Username}/movies/${MovieID}`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer' + token,
-      })}).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+      })
+    })
   }
 
 // Delete FavMovie
@@ -119,10 +104,8 @@ export class UserRegistrationService {
     return this.http.delete(apiUrl + `/users/${Username}/movies/${MovieID}`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer' + token,
-      })}).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+      })
+    })
   }
 
 // Edit User Profile
@@ -132,10 +115,8 @@ export class UserRegistrationService {
     return this.http.put(apiUrl + `/users/${Username}`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer' + token,
-      })}).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+      })
+    })
   }
 
 // Delete User Profile
@@ -145,10 +126,8 @@ export class UserRegistrationService {
     return this.http.delete(apiUrl + `/users/${Username}`, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer' + token,
-      })}).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+      })
+    })
   }
 
   
