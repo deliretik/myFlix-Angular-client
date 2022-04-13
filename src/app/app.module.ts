@@ -28,6 +28,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { EditProfileFormComponent } from './edit-profile-form/edit-profile-form.component';
 import { DeleteProfileFormComponent } from './delete-profile-form/delete-profile-form.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { GenreCardComponent } from './genre-card/genre-card.component';
 
 
 // adding modules to imports array of main module
@@ -48,7 +49,8 @@ const appRoutes: Routes = [
     UserProfileComponent,
     EditProfileFormComponent,
     DeleteProfileFormComponent,
-    NavigationComponent
+    NavigationComponent,
+    GenreCardComponent
   ],
   imports: [
     BrowserModule,
