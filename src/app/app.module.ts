@@ -29,6 +29,8 @@ import { EditProfileFormComponent } from './edit-profile-form/edit-profile-form.
 import { DeleteProfileFormComponent } from './delete-profile-form/delete-profile-form.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { GenreCardComponent } from './genre-card/genre-card.component';
+import { DirectorCardComponent } from './director-card/director-card.component';
+import { SynopsisCardComponent } from './synopsis-card/synopsis-card.component';
 
 
 // adding modules to imports array of main module
@@ -50,7 +52,9 @@ const appRoutes: Routes = [
     EditProfileFormComponent,
     DeleteProfileFormComponent,
     NavigationComponent,
-    GenreCardComponent
+    GenreCardComponent,
+    DirectorCardComponent,
+    SynopsisCardComponent
   ],
   imports: [
     BrowserModule,
