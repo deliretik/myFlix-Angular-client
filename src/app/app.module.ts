@@ -25,6 +25,8 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { EditProfileFormComponent } from './edit-profile-form/edit-profile-form.component';
+import { DeleteProfileFormComponent } from './delete-profile-form/delete-profile-form.component';
 
 
 // adding modules to imports array of main module
@@ -42,7 +44,9 @@ const appRoutes: Routes = [
     UserRegistrationFormComponent,
     UserLoginFormComponent,
     MovieCardComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    EditProfileFormComponent,
+    DeleteProfileFormComponent
   ],
   imports: [
     BrowserModule,
