@@ -1,1 +1,25 @@
-<p>welcome-page works!</p>
+<div class="main-page">
+    <img src="../../assets/logo.png">
+      <h1>
+        Welcome to Flex my flix!
+      </h1>
+    <div class="div-buttons">
+      <button
+        mat-raised-button
+        (click)="openUserRegistrationDialog()"
+        style="margin-right: 10px;"
+        class="register-button"
+      >
+        Sign Up
+      </button>
+      <button
+        mat-raised-button
+        (click)="openUserLoginDialog()"
+        style="margin-left: 10px margin-right 10px;"
+        class="login-button"
+      > 
+        Login
+      </button>
+    </div> 
+</div>
+ 
