@@ -24,6 +24,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 
 import { RouterModule, Routes } from '@angular/router';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 // adding modules to imports array of main module
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     AppComponent,
     UserRegistrationFormComponent,
     UserLoginFormComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
