@@ -21,17 +21,15 @@ import { UserRegistrationFormComponent } from './user-registration-form/user-reg
 import { UserLoginFormComponent } from './user-login-form/user-login-form.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
-
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { DirectorCardComponent } from './director-card/director-card.component';
+import { GenreCardComponent } from './genre-card/genre-card.component';
+import { SynopsisCardComponent } from './synopsis-card/synopsis-card.component';
+import { EditProfileFormComponent } from './edit-profile-form/edit-profile-form.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 import { RouterModule, Routes } from '@angular/router';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { EditProfileFormComponent } from './edit-profile-form/edit-profile-form.component';
 import { DeleteProfileFormComponent } from './delete-profile-form/delete-profile-form.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { GenreCardComponent } from './genre-card/genre-card.component';
-import { DirectorCardComponent } from './director-card/director-card.component';
-import { SynopsisCardComponent } from './synopsis-card/synopsis-card.component';
-
 
 // adding modules to imports array of main module
 
@@ -39,6 +37,7 @@ import { SynopsisCardComponent } from './synopsis-card/synopsis-card.component';
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent},
   { path: 'movies', component: MovieCardComponent},
+  { path: 'profile', component: UserProfileComponent},
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
 ];
 
@@ -49,12 +48,12 @@ const appRoutes: Routes = [
     UserLoginFormComponent,
     MovieCardComponent,
     UserProfileComponent,
-    EditProfileFormComponent,
-    DeleteProfileFormComponent,
-    NavigationComponent,
-    GenreCardComponent,
     DirectorCardComponent,
-    SynopsisCardComponent
+    GenreCardComponent,
+    SynopsisCardComponent,
+    EditProfileFormComponent,
+    NavigationComponent,
+    DeleteProfileFormComponent
   ],
   imports: [
     BrowserModule,

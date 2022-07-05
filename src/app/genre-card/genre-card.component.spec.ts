@@ -22,4 +22,3 @@ describe('GenreCardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
